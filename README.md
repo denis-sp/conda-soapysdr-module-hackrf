@@ -1,0 +1,1 @@
+# conda-soapysdr-module-hackrf
