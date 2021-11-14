@@ -1,0 +1,28 @@
+{% set name = "soapysdr-module-hackrf" %}
+{% set version = "20211115" %}
+
+package:
+    name: {{ name|lower }}
+    version: {{ version }}
+
+source:
+    git_url: https://github.com/pothosware/SoapyHackRF.git
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - {{ compiler('cxx') }}
+        - cmake
+        - ninja
+    host:
+        - hackrf
+        - soapysdr
+
+about:
+    home: https://github.com/pothosware/SoapyHackRF
+    license: MIT
+    license_file: LICENSE
+    summary: Soapy SDR module for Hack RF
+
