@@ -1,6 +1,9 @@
 # conda-soapysdr-module-hackrf
 
+**To build:**
+
 conda build SoapyHackRF -c conda-forge --no-anaconda-upload
 
+**To install:**
 
-https://anaconda.org/delichon/soapysdr-module-hackrf
+conda install -c delichon soapysdr-module-hackrf 
